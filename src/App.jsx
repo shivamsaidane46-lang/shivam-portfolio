@@ -332,6 +332,32 @@ const PORTFOLIO_DATA = {
           detail: "High KB confidence + neutral/positive sentiment triggers an automated KB-grounded reply; frustration or low confidence builds an enriched Airtable brief and routes to Urgent or Normal Slack queues."
         }
       ]
+    },
+    {
+      id: "wf-07",
+      number: "07",
+      title: "HubSpot RevOps Engine: AI Lead Enrichment, ICP Scoring & Instant Deal Routing",
+      category: "CRM & Onboarding",
+      featured: true,
+      image: "/workflows/workflow_hubspot_revops_engine.jpg",
+      summary: "Zero-leakage B2B RevOps pipeline that captures inbound leads from website forms and Meta Lead Ads, normalizes +91 phone formatting to E.164, extracts corporate domains, computes a 0–100 AI ICP fit score and estimated deal value, upserts enriched Contacts into HubSpot CRM via Private App API, and routes high-intent SQLs (ICP >= 75) to auto-create Deals in 'Discovery Completed' with instant WhatsApp and Slack rep alerts.",
+      metrics: "ICP >= 75 Auto-Deal · Sub-5s Rep Alert",
+      nodesCount: 8,
+      tags: ["n8n", "HubSpot CRM", "AI ICP Scoring", "Meta Lead Ads", "E.164 Hygiene", "WhatsApp & Slack Ops"],
+      stages: [
+        {
+          step: "1. Ingestion & Data Hygiene",
+          detail: "Captures inbound leads from Website Forms and Meta Lead Ads, normalizes +91 phone formatting to strict E.164 standard, and extracts the corporate domain."
+        },
+        {
+          step: "2. AI ICP Scoring & HubSpot Upsert",
+          detail: "Evaluates company fit, calculates an ICP Score (0–100), estimates deal value, and upserts the enriched Contact record into HubSpot CRM via Private App API."
+        },
+        {
+          step: "3. Zero-Leakage Pipeline Routing",
+          detail: "Routes high-value SQLs (ICP >= 75) to auto-create a HubSpot Deal in 'Discovery Completed' and dispatches an instant WhatsApp & Slack rep alert, while enrolling < 75 leads into a low-touch nurture sequence."
+        }
+      ]
     }
   ],
   skills: [
@@ -666,7 +692,7 @@ const handleContactSubmit = async (e) => {
                   className="px-6 py-3 rounded-full bg-[#171326] text-white text-xs sm:text-sm font-semibold hover:bg-[#2B2445] transition-all shadow-lg flex items-center gap-2"
                 >
                   <Workflow className="w-4 h-4 text-[#C4B5FD]" />
-                  <span>Explore 6 n8n Workflows</span>
+                  <span>Explore 7 n8n Workflows</span>
                 </button>
                 <button
                   type="button"
@@ -774,7 +800,7 @@ const handleContactSubmit = async (e) => {
                     </div>
                     <span className="text-xs font-bold text-[#1F1B33] tracking-tight">n8n Workflows</span>
                     <span className="text-[10px] text-[#3F3859] font-medium mt-0.5">
-                      6 Production Systems
+                      7 Production Systems
                     </span>
                     <span className="mt-2 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-[#1F1B33] text-white">
                       100+ Active Nodes
@@ -957,7 +983,7 @@ const handleContactSubmit = async (e) => {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1F1B33] text-white text-xs font-semibold hover:bg-[#322B52] transition-colors shadow-sm"
               >
                 <Code2 className="w-4 h-4 text-[#C4B5FD]" />
-                <span>View All 6 Workflow JSONs on GitHub</span>
+                <span>View All 7 Workflow JSONs on GitHub</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
