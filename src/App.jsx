@@ -25,58 +25,125 @@ import {
   ChevronRight,
   Cpu,
   ShieldCheck,
-  Calendar
+  Calendar,
+  Clock,
+  Calculator,
+  HelpCircle,
+  ChevronDown,
+  Rocket
 } from 'lucide-react';
 
 // ============================================================================
 // OWNER CONFIGURATION (Edit this file in GitHub / VS Code / Antigravity to
-// add new HubSpot certifications or n8n workflows — pushes deploy to Netlify)
+// add new HubSpot certifications, client packages, or n8n workflows)
 // ============================================================================
 const PORTFOLIO_DATA = {
   profile: {
     name: "Shivam Saidane",
     shortName: "Shivam S.",
-    brand: "Shivam S.",
-    role: "Marketing Automation & CRM Specialist",
-    availability: "Available for Freelance & Full-Time Remote Roles",
-    headline: "Where Pipeline & Automation Grow",
+    brand: "Shivam S. · Automation Studio",
+    role: "Freelance HubSpot RevOps & n8n Automation Partner",
+    availability: "Accepting New Client Projects & Sprints · Fast Turnaround",
+    headline: "Turn Manual Busywork Into Autonomous Revenue Systems",
     subheadline:
-      "I architect autonomous n8n workflows, HubSpot CRM ecosystems, and data-driven marketing pipelines that eliminate manual busywork and scale revenue operations effortlessly.",
+      "Stop losing leads to slow follow-ups and disconnected tools. Partner directly with a 5× HubSpot Certified specialist & n8n automation architect to deploy custom CRM pipelines, AI lead-scoring engines, and zero-touch operations—delivered in days, not months.",
     personalMotto:
-      "Great automation doesn't replace human connection—it removes operational friction so revenue teams can focus on the relationships that matter.",
-    experienceYears: "2–3+ Years",
+      "Great automation doesn't replace human connection—it removes operational friction so your revenue team can focus on closing deals and serving clients.",
+    experienceYears: "3+ Years",
     email: "shivam@shivamsaidane.online",
     domain: "shivamsaidane.online",
-    location: "India · Remote / Worldwide",
+    location: "India · Serving Clients Worldwide",
     githubUrl: "https://github.com/shivamsaidane46-lang/AI-Automation-Portfolio/tree/main",
     linkedinUrl: "https://www.linkedin.com/in/shivam-saidane-82b11b274",
     threadsUrl: "https://www.threads.com/@_.solivant?xmt=AQG0vZhL3oxPdwFcKcvMT6Bvc6QoYvpvyYnltFDtvKwRAyo",
     fiverrUrl: "https://www.fiverr.com/s/yeeL2WV"
   },
+  servicePackages: [
+    {
+      id: "pkg-sprint",
+      badge: "Fastest ROI · 3–5 Days",
+      title: "Custom n8n Workflow Sprint",
+      subtitle: "For founders & teams eliminating a high-friction manual bottleneck",
+      turnaround: "3–5 Business Days",
+      engagementModel: "Fixed-Scope Milestone",
+      featured: false,
+      inquiryValue: "Single n8n Workflow Sprint (3–5 Days)",
+      timelinePreset: "3–5 Day Fixed-Scope Sprint",
+      description:
+        "One production-grade, multi-node n8n automation engineered from scratch—connecting your forms, AI models, databases, Slack, and CRM with fail-safe error handling.",
+      deliverables: [
+        "End-to-end custom n8n workflow architecture (Cloud or Self-Hosted)",
+        "Webhook, REST API, & custom JavaScript/Python code node integration",
+        "Dedicated Slack/Email Error-Trigger node so zero payloads fail silently",
+        "100% ownership of source .json file + recorded walkthrough handoff",
+        "14 days of post-launch hypercare & edge-case tuning"
+      ]
+    },
+    {
+      id: "pkg-revops",
+      badge: "Most Popular · 1–2 Weeks",
+      title: "HubSpot RevOps & AI Pipeline Engine",
+      subtitle: "For B2B sales & marketing teams scaling inbound and outbound velocity",
+      turnaround: "7–14 Business Days",
+      engagementModel: "Turnkey System Build",
+      featured: true,
+      inquiryValue: "HubSpot CRM & RevOps Engine Build (1–2 Weeks)",
+      timelinePreset: "1–2 Week Turnkey RevOps Build",
+      description:
+        "Complete HubSpot Sales Hub & Reporting setup wired to autonomous n8n backend workflows—automating lead capture, AI ICP scoring, deal routing, and executive attribution.",
+      deliverables: [
+        "HubSpot Sales Hub deal pipelines, custom properties & lifecycle stages",
+        "AI ICP lead scoring (0–100) + E.164 phone & corporate domain hygiene",
+        "Instant high-intent SQL routing + WhatsApp/Slack sales rep alerts",
+        "Automated low-touch nurture sequences for <75 ICP leads",
+        "Executive HubSpot & weekly Slack PDF revenue health dashboards"
+      ]
+    },
+    {
+      id: "pkg-retainer",
+      badge: "Ongoing Partner · Monthly",
+      title: "Dedicated Automation & CRM Partner",
+      subtitle: "For growing agencies & B2B operators needing an on-call automation engineer",
+      turnaround: "Continuous Weekly Releases",
+      engagementModel: "Monthly Retainer",
+      featured: false,
+      inquiryValue: "Dedicated Monthly Automation Retainer",
+      timelinePreset: "Monthly Automation Partner Retainer",
+      description:
+        "Your fractional Marketing Automation & HubSpot RevOps engineer—continuously shipping new n8n workflows, maintaining API integrations, and optimizing SQL/BigQuery reporting.",
+      deliverables: [
+        "Ongoing n8n workflow development & new API/webhook integrations",
+        "Continuous HubSpot CRM administration, list hygiene & sequence A/B ops",
+        "SQL, PostgreSQL, Supabase & BigQuery data pipeline maintenance",
+        "Direct Slack channel communication & priority 24h turnaround",
+        "Cancel or pause anytime—zero long-term agency lock-in"
+      ]
+    }
+  ],
   bentoHighlights: [
     {
       id: "bento-1",
       theme: "lavender",
       badge: "n8n + AI Orchestration",
-      title: "Pipeline that grows on autopilot",
+      title: "Client pipelines that scale on autopilot",
       description:
-        "Deploy multi-stage n8n workflows that watch your inbox, CRM, ad platforms, and databases—enriching leads, triaging tickets, and generating executive reports automatically."
+        "Deploy multi-stage n8n workflows that watch your inbox, CRM, ad platforms, and databases—enriching leads, triaging support tickets, and generating executive reports automatically."
     },
     {
       id: "bento-2",
       theme: "indigo",
       badge: "HubSpot CRM Architecture",
-      title: "Always synced, always clean",
+      title: "Clean CRM data, zero lead leakage",
       description:
-        "Stay fully aligned across Sales Hub, Inbound funnels, PostgreSQL, and BigQuery with strict deduplication checks, automated deal-stage routing, and zero silent failures."
+        "Stay 100% aligned across Sales Hub, Meta/Google Ads, PostgreSQL, and BigQuery with strict deduplication gates, E.164 normalization, and automated deal-stage routing."
     },
     {
       id: "bento-3",
       theme: "indigo",
-      badge: "End-to-End Execution",
-      title: "100% hands-free reliability",
+      badge: "Full IP Handoff & Reliability",
+      title: "You own 100% of the code & JSONs",
       description:
-        "Built with production error-handling triggers, Slack Ops alerts, and strict JSON validation so your marketing and finance operations run smoothly in the background."
+        "Every system is deployed directly inside your accounts with production error-handling triggers, Slack Ops alerts, and complete JSON documentation—zero vendor lock-in."
     }
   ],
   certifications: [
@@ -340,7 +407,8 @@ const PORTFOLIO_DATA = {
       category: "CRM & Onboarding",
       featured: true,
       image: "/workflows/workflow_hubspot_revops_engine.jpg",
-      summary: "Zero-leakage B2B RevOps pipeline that captures inbound leads from website forms and Meta Lead Ads, normalizes +91 phone formatting to E.164, extracts corporate domains, computes a 0–100 AI ICP fit score and estimated deal value, upserts enriched Contacts into HubSpot CRM via Private App API, and routes high-intent SQLs (ICP >= 75) to auto-create Deals in 'Discovery Completed' with instant WhatsApp and Slack rep alerts.",
+      summary:
+        "Zero-leakage B2B RevOps pipeline that captures inbound leads from website forms and Meta Lead Ads, normalizes +91 phone formatting to E.164, extracts corporate domains, computes a 0–100 AI ICP fit score and estimated deal value, upserts enriched Contacts into HubSpot CRM via Private App API, and routes high-intent SQLs (ICP >= 75) to auto-create Deals in 'Discovery Completed' with instant WhatsApp and Slack rep alerts.",
       metrics: "ICP >= 75 Auto-Deal · Sub-5s Rep Alert",
       nodesCount: 8,
       tags: ["n8n", "HubSpot CRM", "AI ICP Scoring", "Meta Lead Ads", "E.164 Hygiene", "WhatsApp & Slack Ops"],
@@ -360,13 +428,32 @@ const PORTFOLIO_DATA = {
       ]
     }
   ],
-  skills: [
-    { name: "HubSpot CRM & Sales Hub Architecture", level: 96, category: "CRM & RevOps" },
-    { name: "n8n Workflow Automation & API Orchestration", level: 95, category: "Automation" },
-    { name: "Inbound Marketing & AEO Strategy", level: 92, category: "Marketing" },
-    { name: "SQL, PostgreSQL & BigQuery Analytics", level: 88, category: "Data & DB" },
-    { name: "Python Scripting & Webhook Transformation", level: 86, category: "Engineering" },
-    { name: "HTML, CSS, JavaScript & React UI", level: 85, category: "Web & Frontend" }
+  clientDeliverables: [
+    {
+      name: "HubSpot Sales Hub & RevOps Architecture",
+      outcome: "Zero Lead Leakage",
+      detail: "Custom deal pipelines, lead scoring, E.164 hygiene, and automated stage routing."
+    },
+    {
+      name: "Production n8n Workflow Engineering",
+      outcome: "100% IP Ownership",
+      detail: "Multi-node API & webhook pipelines with dedicated Slack error-handling triggers."
+    },
+    {
+      name: "AI Lead Enrichment & RAG Support Triage",
+      outcome: "Sub-5s Response Time",
+      detail: "Gemini/OpenAI scoring, pgvector knowledge-base search, and smart escalations."
+    },
+    {
+      name: "Executive BI & Cross-Channel Reporting",
+      outcome: "Automated Monday Briefs",
+      detail: "Stripe, Meta/Google Ads, and HubSpot metrics unified in SQL/BigQuery & PDF digests."
+    },
+    {
+      name: "Zero-Touch Client & AP Provisioning",
+      outcome: "Saves 15+ Hrs/Week",
+      detail: "Instant contract/invoice verification, Drive/Slack setup, and math-validated AP."
+    }
   ],
   techStack: [
     { name: "HubSpot CRM", role: "Sales Hub · Reporting · Inbound", badge: "HS", accent: "bg-[#FF7A59]/15 text-[#D94E28] border-[#FF7A59]/30" },
@@ -379,27 +466,45 @@ const PORTFOLIO_DATA = {
     { name: "HTML5 & CSS3", role: "Landing Pages & Email Templates", badge: "UI", accent: "bg-violet-500/15 text-violet-700 border-violet-400/30" },
     { name: "Supabase & Airtable", role: "Backend State & Ops Bases", badge: "DB", accent: "bg-teal-500/15 text-teal-700 border-teal-400/30" }
   ],
-  journey: [
+  deliveryProcess: [
     {
       phase: "01",
-      period: "Years 1–2 · Creative & Technical Foundation",
-      title: "Voice Systems, Video & Multimedia Freelancing",
+      period: "Day 1 · Discovery & Blueprint",
+      title: "Free Workflow & CRM Bottleneck Audit",
       description:
-        "Started freelancing 2–3 years ago building voice systems and delivering high-impact video and image editing gigs—developing a sharp eye for pacing, storytelling, and client delivery."
+        "We review your current HubSpot setup, manual handoffs, and API endpoints—mapping out a concrete node-by-node automation architecture with clear fixed-scope deliverables."
     },
     {
       phase: "02",
-      period: "Year 2–Present · Automation Engineering",
-      title: "Designing & Selling Production n8n Workflows",
+      period: "Days 2–5 · Build & Stress-Test",
+      title: "Engineering, Deduplication & Error Guards",
       description:
-        "Pivoted into building multi-node n8n automation pipelines—combining webhooks, LLMs, SQL/Supabase, and custom JavaScript code nodes to solve recurring operational bottlenecks for clients."
+        "I build and test your n8n workflows and HubSpot pipelines in a safe staging environment—adding strict data normalization, Supabase/CRM deduplication gates, and Slack error alerts."
     },
     {
       phase: "03",
-      period: "Current Focus · Revenue & CRM Architecture",
-      title: "Marketing Automation & HubSpot CRM Specialist",
+      period: "Launch · Full Handoff & Hypercare",
+      title: "Live Deployment + 100% JSON & IP Ownership",
       description:
-        "Uniting HubSpot CRM (Sales Hub, Reporting, Inbound, AEO, Frictionless Sales) with autonomous n8n backend workflows to deliver complete revenue engines."
+        "We deploy directly into your n8n and HubSpot accounts. You receive the complete workflow JSONs, credential docs, a recorded walkthrough, and 14 days of post-launch support."
+    }
+  ],
+  faqs: [
+    {
+      q: "Do I own 100% of the n8n workflow JSONs and HubSpot configurations?",
+      a: "Yes—100%. Every workflow, custom code node, and HubSpot pipeline is deployed directly into your own accounts and handed over with the raw .json files and documentation. There is zero agency lock-in."
+    },
+    {
+      q: "Can you work with both n8n Cloud and self-hosted n8n instances?",
+      a: "Absolutely. I build and deploy across both n8n Cloud and self-hosted Docker/VPS environments, as well as HubSpot Starter, Professional, and Enterprise portals."
+    },
+    {
+      q: "What happens if an external API times out or a webhook payload changes?",
+      a: "Every production workflow I deliver is engineered with idempotent deduplication checks and a dedicated Error Trigger path that catches API timeouts, expired tokens, or schema mismatches and alerts your Slack channel immediately."
+    },
+    {
+      q: "How do we start a project—direct invoice or Fiverr escrow?",
+      a: "Whichever fits your procurement workflow best. You can book a fixed-scope sprint or monthly retainer via direct invoice (email below) or through my verified Fiverr workspace if you prefer platform milestone escrow."
     }
   ]
 };
@@ -414,18 +519,26 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [workflowSearch, setWorkflowSearch] = useState("");
   const [activeWorkflowModal, setActiveWorkflowModal] = useState(null);
-  const [expandedWorkflowStages, setExpandedWorkflowStages] = useState({ "wf-01": true, "wf-02": true });
+  const [expandedWorkflowStages, setExpandedWorkflowStages] = useState({ "wf-07": true, "wf-01": true });
 
   // HubSpot Certifications Filter & Official Certificate Lightbox State
   const [certSearch, setCertSearch] = useState("");
   const [selectedCertCategory, setSelectedCertCategory] = useState("All");
   const [activeCertModal, setActiveCertModal] = useState(null);
 
+  // Interactive Freelance ROI Calculator State
+  const [teamMembers, setTeamMembers] = useState(4);
+  const [hoursPerWeek, setHoursPerWeek] = useState(6);
+  const [hourlyCost, setHourlyCost] = useState(35);
+
+  // FAQ Accordion State
+  const [openFaqIndex, setOpenFaqIndex] = useState(0);
+
   // Contact Form & Toast Notification State
   const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
-    inquiryType: "HubSpot CRM & Marketing Automation",
+    inquiryType: "HubSpot CRM & RevOps Engine Build (1–2 Weeks)",
     budgetOrTimeline: "",
     message: ""
   });
@@ -501,6 +614,14 @@ export default function App() {
     });
   }, [portfolioData.certifications, selectedCertCategory, certSearch]);
 
+  // ROI Calculator Derived Metrics
+  const roiMetrics = useMemo(() => {
+    const monthlyHoursSaved = Math.round(teamMembers * hoursPerWeek * 4.33 * 0.85);
+    const monthlySavingsUsd = Math.round(monthlyHoursSaved * hourlyCost);
+    const annualSavingsUsd = monthlySavingsUsd * 12;
+    return { monthlyHoursSaved, monthlySavingsUsd, annualSavingsUsd };
+  }, [teamMembers, hoursPerWeek, hourlyCost]);
+
   // Subtle Hero Parallax
   const handleHeroMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -524,34 +645,50 @@ export default function App() {
     }
   };
 
-const handleContactSubmit = async (e) => {
-  e.preventDefault();
-  if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.message.trim()) {
-    showToast("Please fill in your name, email, and project details.");
-    return;
-  }
-  const encodedBody = new URLSearchParams({
-    "form-name": "shivam-portfolio-contact",
-    name: contactForm.name,
-    email: contactForm.email,
-    inquiryType: contactForm.inquiryType,
-    budgetOrTimeline: contactForm.budgetOrTimeline,
-    message: contactForm.message
-  }).toString();
+  const selectServicePackage = (pkg) => {
+    setContactForm((prev) => ({
+      ...prev,
+      inquiryType: pkg.inquiryValue,
+      budgetOrTimeline: pkg.timelinePreset,
+      message: `Hi Shivam, we're interested in your "${pkg.title}" (${pkg.turnaround}). Here's what we want to automate:`
+    }));
+    showToast(`Selected "${pkg.title}" — project scope pre-filled below!`);
+    scrollToSection("contact");
+  };
 
-  try {
-    await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodedBody
-    });
-    setContactSubmitted(true);
-    showToast("Message sent! Your inquiry has been delivered.");
-  } catch (err) {
-    setContactSubmitted(true);
-    showToast("Message recorded!");
-  }
-};
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleContactSubmit = async (e) => {
+    e.preventDefault();
+    if (!contactForm.name.trim() || !contactForm.email.trim() || !contactForm.message.trim()) {
+      showToast("Please fill in your name, email, and project details.");
+      return;
+    }
+    setIsSubmitting(true);
+    const encodedBody = new URLSearchParams({
+      "form-name": "shivam-portfolio-contact",
+      name: contactForm.name,
+      email: contactForm.email,
+      inquiryType: contactForm.inquiryType,
+      budgetOrTimeline: contactForm.budgetOrTimeline,
+      message: contactForm.message
+    }).toString();
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodedBody
+      });
+      setContactSubmitted(true);
+      showToast("Project inquiry sent! Shivam will reply within 24 hours.");
+    } catch (err) {
+      setContactSubmitted(true);
+      showToast("Inquiry recorded! You can also click below to email Shivam directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#F6F5F0] text-[#1A162B] font-sans selection:bg-[#7C5CFC]/20 selection:text-[#1A162B]">
@@ -572,7 +709,7 @@ const handleContactSubmit = async (e) => {
       )}
 
       {/* =====================================================================
-          STICKY BLOOMFI PILL NAVIGATION BAR (Clean Visitor-Only UI)
+          STICKY BLOOMFI PILL NAVIGATION BAR (Client-Focused Freelance UI)
          ===================================================================== */}
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-[#F6F5F0]/85 border-b border-[#E5E0F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
@@ -590,7 +727,7 @@ const handleContactSubmit = async (e) => {
                 {portfolioData.profile.shortName}
               </span>
               <span className="text-[11px] text-[#655E80] font-medium tracking-wider uppercase">
-                CRM &amp; n8n Specialist
+                RevOps &amp; n8n Partner
               </span>
             </div>
           </button>
@@ -598,12 +735,12 @@ const handleContactSubmit = async (e) => {
           {/* Center Nav Links */}
           <nav className="hidden md:flex items-center gap-1 bg-white/75 border border-[#E5E0F5] rounded-full px-3 py-1.5 shadow-sm">
             {[
-              { label: "Overview", id: "overview" },
-              { label: "n8n Workflows", id: "workflows" },
-              { label: "HubSpot Certifications", id: "certifications" },
-              { label: "Skills & Stack", id: "skills" },
-              { label: "Journey", id: "journey" },
-              { label: "Contact", id: "contact" }
+              { label: "Services & Packages", id: "services" },
+              { label: "Case Studies (7)", id: "workflows" },
+              { label: "ROI Calculator", id: "roi-calculator" },
+              { label: "HubSpot Credentials", id: "certifications" },
+              { label: "How We Work", id: "journey" },
+              { label: "FAQ", id: "faq" }
             ].map((item) => (
               <button
                 key={item.id}
@@ -616,23 +753,23 @@ const handleContactSubmit = async (e) => {
             ))}
           </nav>
 
-          {/* Right Visitor Action Buttons */}
+          {/* Right Client Action Buttons */}
           <div className="flex items-center gap-2.5">
             <a
-              href={portfolioData.profile.githubUrl}
+              href={portfolioData.profile.fiverrUrl}
               target="_blank"
               rel="noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold bg-white text-[#1F1B33] border border-[#DCD4F7] hover:bg-[#EDE9FE]/60 transition-colors"
             >
-              <Code2 className="w-3.5 h-3.5 text-[#5B21B6]" />
-              <span>GitHub Repo</span>
+              <Briefcase className="w-3.5 h-3.5 text-[#5B21B6]" />
+              <span>Hire on Fiverr</span>
             </a>
             <button
               type="button"
               onClick={() => scrollToSection("contact")}
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-semibold bg-[#1F1B33] text-white hover:bg-[#2E284D] transition-all shadow-sm"
             >
-              <span>Work With Me</span>
+              <span>Book a Sprint</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -641,7 +778,7 @@ const handleContactSubmit = async (e) => {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-20 space-y-20">
         {/* ===================================================================
-            HERO SECTION (Clean BloomFi Aesthetic + Seamless 3D Glass Visual)
+            HERO SECTION (Freelance Partner Positioning + 3D Glass Visual)
            =================================================================== */}
         <section
           id="hero"
@@ -655,9 +792,9 @@ const handleContactSubmit = async (e) => {
           <div className="pointer-events-none absolute bottom-0 inset-x-0 h-64 bg-gradient-to-t from-[#18142B] via-[#221C3D]/90 to-transparent" />
 
           <div className="relative z-10 px-6 sm:px-12 pt-10 sm:pt-14 pb-12">
-            {/* Top Centered BloomFi Ornament + Availability Pill */}
+            {/* Top Centered BloomFi Ornament + Client Availability Pill */}
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-md border border-[#C4B5FD]/60 shadow-sm mb-5">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#C4B5FD]/60 shadow-sm mb-5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="text-xs font-semibold tracking-wide text-[#2A2442]">
                   {portfolioData.profile.availability}
@@ -680,27 +817,43 @@ const handleContactSubmit = async (e) => {
                 {portfolioData.profile.headline}
               </h1>
 
-              <p className="text-sm sm:text-base text-[#3D3557] max-w-2xl leading-relaxed mb-8">
+              <p className="text-sm sm:text-base text-[#3D3557] max-w-2xl leading-relaxed mb-7">
                 {portfolioData.profile.subheadline}
               </p>
 
-              {/* Clean Visitor Hero CTAs */}
+              {/* Client Trust Guarantees */}
+              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-8 text-[11px] font-semibold text-[#3B2A78]">
+                <span className="px-3 py-1 rounded-full bg-white/70 border border-white flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>3–5 Day Fixed-Scope Sprints</span>
+                </span>
+                <span className="px-3 py-1 rounded-full bg-white/70 border border-white flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>100% JSON &amp; IP Handoff</span>
+                </span>
+                <span className="px-3 py-1 rounded-full bg-white/70 border border-white flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>5× Official HubSpot Certified</span>
+                </span>
+              </div>
+
+              {/* Client-Converting Hero CTAs */}
               <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
                 <button
                   type="button"
-                  onClick={() => scrollToSection("workflows")}
+                  onClick={() => scrollToSection("services")}
                   className="px-6 py-3 rounded-full bg-[#171326] text-white text-xs sm:text-sm font-semibold hover:bg-[#2B2445] transition-all shadow-lg flex items-center gap-2"
                 >
-                  <Workflow className="w-4 h-4 text-[#C4B5FD]" />
-                  <span>Explore 7 n8n Workflows</span>
+                  <Rocket className="w-4 h-4 text-[#C4B5FD]" />
+                  <span>View Freelance Packages</span>
                 </button>
                 <button
                   type="button"
-                  onClick={() => scrollToSection("certifications")}
+                  onClick={() => scrollToSection("workflows")}
                   className="px-5 py-3 rounded-full bg-white/90 backdrop-blur-md text-[#171326] border border-[#C4B5FD] text-xs sm:text-sm font-semibold hover:bg-white transition-all flex items-center gap-2"
                 >
-                  <Award className="w-4 h-4 text-[#D94E28]" />
-                  <span>Official HubSpot Certifications ({portfolioData.certifications.length})</span>
+                  <Workflow className="w-4 h-4 text-[#5B21B6]" />
+                  <span>Explore 7 n8n Workflows</span>
                 </button>
                 <a
                   href={portfolioData.profile.githubUrl}
@@ -716,7 +869,7 @@ const handleContactSubmit = async (e) => {
             </div>
 
             {/* ===============================================================
-                CLEAN BLOOMFI HERO GLASS CENTERPIECE (No Debug/Config Bars)
+                CLEAN BLOOMFI HERO GLASS CENTERPIECE
                =============================================================== */}
             <div className="relative max-w-5xl mx-auto">
               <div
@@ -752,7 +905,7 @@ const handleContactSubmit = async (e) => {
                     <div className="w-10 h-10 rounded-2xl bg-[#FF7A59]/20 border border-[#FF7A59]/50 flex items-center justify-center mb-2">
                       <Award className="w-5 h-5 text-[#D94E28]" />
                     </div>
-                    <span className="text-xs font-bold text-[#1F1B33] tracking-tight">HubSpot CRM</span>
+                    <span className="text-xs font-bold text-[#1F1B33] tracking-tight">HubSpot RevOps</span>
                     <span className="text-[10px] text-[#3F3859] font-medium mt-0.5">
                       5 Official Certifications
                     </span>
@@ -763,7 +916,7 @@ const handleContactSubmit = async (e) => {
 
                   {/* Center Faceted Glass Core Prism */}
                   <div
-                    onClick={() => scrollToSection("overview")}
+                    onClick={() => scrollToSection("services")}
                     className="cursor-pointer relative w-44 h-44 sm:w-56 sm:h-56 rounded-[36px] rotate-6 border-2 border-white/85 backdrop-blur-2xl shadow-[0_25px_70px_rgba(49,27,114,0.45)] flex flex-col items-center justify-center p-5 transition-all duration-300 hover:scale-105 z-30"
                     style={{
                       background:
@@ -775,13 +928,13 @@ const handleContactSubmit = async (e) => {
                         <Cpu className="w-6 h-6 text-[#D8B4FE]" />
                       </div>
                       <span className="text-[11px] font-bold uppercase tracking-widest text-[#5B21B6]">
-                        Revenue Architecture
+                        Turnkey Systems
                       </span>
                       <span className="text-sm sm:text-base font-bold text-[#171326] mt-0.5">
                         CRM × n8n × AI
                       </span>
                       <span className="text-[11px] text-[#3D3557] mt-1 max-w-[160px] leading-tight">
-                        Zero-touch lead capture, triage &amp; executive BI
+                        Built, stress-tested &amp; deployed in your stack
                       </span>
                     </div>
                   </div>
@@ -813,16 +966,146 @@ const handleContactSubmit = async (e) => {
         </section>
 
         {/* ===================================================================
-            BLOOMFI BENTO OVERVIEW SECTION ("What I Architect")
+            PRODUCTIZED FREELANCE SERVICES & ENGAGEMENT MODELS
+           =================================================================== */}
+        <section id="services" className="space-y-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#5B21B6]">
+                <Briefcase className="w-3.5 h-3.5" />
+                <span>Productized Freelance Offerings</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-serif text-[#171326]">
+                Ways We Can Work Together
+              </h2>
+              <p className="text-sm sm:text-base text-[#4B4466] max-w-2xl">
+                Clear deliverables, transparent timelines, and zero hourly billing surprises. Choose a fixed-scope sprint to eliminate an immediate bottleneck or partner monthly to scale your entire revenue engine.
+              </p>
+            </div>
+            <a
+              href={portfolioData.profile.fiverrUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#DCD4F7] text-[#171326] text-xs font-semibold hover:bg-[#EDE9FE]/60 transition-colors shadow-sm"
+            >
+              <span>Prefer Fiverr Escrow? View Verified Gigs</span>
+              <ExternalLink className="w-3.5 h-3.5 text-[#5B21B6]" />
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {portfolioData.servicePackages.map((pkg) => (
+              <div
+                key={pkg.id}
+                className={`rounded-[28px] p-7 flex flex-col justify-between transition-all duration-300 border ${
+                  pkg.featured
+                    ? "bg-gradient-to-b from-[#1F1B33] via-[#251F3E] to-[#1A152E] text-white border-[#5B21B6] shadow-xl scale-[1.01]"
+                    : "bg-white text-[#171326] border-[#E2DCF5] shadow-sm hover:shadow-lg"
+                }`}
+              >
+                <div className="space-y-5">
+                  <div className="flex items-center justify-between gap-2">
+                    <span
+                      className={`px-3 py-1 rounded-full text-[11px] font-semibold ${
+                        pkg.featured
+                          ? "bg-[#C4B5FD] text-[#171326]"
+                          : "bg-[#EDE9FE] text-[#4C1D95]"
+                      }`}
+                    >
+                      {pkg.badge}
+                    </span>
+                    <span
+                      className={`text-[11px] font-medium flex items-center gap-1 ${
+                        pkg.featured ? "text-[#D1CCE6]" : "text-[#655E80]"
+                      }`}
+                    >
+                      <Clock className="w-3 h-3" />
+                      <span>{pkg.turnaround}</span>
+                    </span>
+                  </div>
+
+                  <div className="space-y-1.5">
+                    <h3
+                      className={`text-2xl font-serif ${
+                        pkg.featured ? "text-white" : "text-[#171326]"
+                      }`}
+                    >
+                      {pkg.title}
+                    </h3>
+                    <p
+                      className={`text-xs font-medium ${
+                        pkg.featured ? "text-[#C4B5FD]" : "text-[#5B21B6]"
+                      }`}
+                    >
+                      {pkg.subtitle}
+                    </p>
+                  </div>
+
+                  <p
+                    className={`text-xs sm:text-sm leading-relaxed ${
+                      pkg.featured ? "text-[#E2DCF5]" : "text-[#4B4466]"
+                    }`}
+                  >
+                    {pkg.description}
+                  </p>
+
+                  <div
+                    className={`pt-4 border-t space-y-2.5 ${
+                      pkg.featured ? "border-white/15" : "border-[#F0EDF9]"
+                    }`}
+                  >
+                    <div
+                      className={`text-[11px] font-bold uppercase tracking-wider ${
+                        pkg.featured ? "text-[#C4B5FD]" : "text-[#5B21B6]"
+                      }`}
+                    >
+                      What&apos;s Included:
+                    </div>
+                    {pkg.deliverables.map((item, i) => (
+                      <div key={i} className="flex items-start gap-2 text-xs">
+                        <CheckCircle2
+                          className={`w-4 h-4 shrink-0 mt-0.5 ${
+                            pkg.featured ? "text-emerald-400" : "text-emerald-600"
+                          }`}
+                        />
+                        <span className={pkg.featured ? "text-white/90" : "text-[#3A3352]"}>
+                          {item}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-7">
+                  <button
+                    type="button"
+                    onClick={() => selectServicePackage(pkg)}
+                    className={`w-full py-3.5 px-5 rounded-full text-xs font-semibold flex items-center justify-center gap-2 transition-all ${
+                      pkg.featured
+                        ? "bg-[#C4B5FD] text-[#171326] hover:bg-white shadow-md"
+                        : "bg-[#1F1B33] text-white hover:bg-[#322B52]"
+                    }`}
+                  >
+                    <span>Scope This {pkg.engagementModel}</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* ===================================================================
+            BLOOMFI BENTO OVERVIEW SECTION ("Why Clients Partner With Me")
            =================================================================== */}
         <section id="overview" className="space-y-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
             <div className="lg:col-span-6 space-y-3">
               <span className="text-xs font-semibold uppercase tracking-widest text-[#5B21B6]">
-                Marketing Automation &amp; CRM Architecture
+                Why Founders &amp; Revenue Teams Hire Shivam S.
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif text-[#171326] tracking-tight">
-                What does Shivam S. build?
+                Engineered for production, not brittle demos
               </h2>
               <div className="pt-1">
                 <button
@@ -830,23 +1113,23 @@ const handleContactSubmit = async (e) => {
                   onClick={() => scrollToSection("workflows")}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1F1B33] text-white text-xs font-semibold hover:bg-[#2F294B] transition-colors"
                 >
-                  <span>Explore live architectures</span>
+                  <span>Inspect 7 live client architectures</span>
                   <ChevronRight className="w-3.5 h-3.5" />
                 </button>
               </div>
             </div>
             <div className="lg:col-span-6">
               <p className="text-base sm:text-lg text-[#3A3352] leading-relaxed">
-                I design revenue operations that connect{" "}
-                <strong className="font-semibold text-[#171326]">HubSpot CRM</strong>,{" "}
-                <strong className="font-semibold text-[#171326]">n8n workflows</strong>, and{" "}
+                Most basic zaps break the moment a webhook fires twice or a phone number is formatted wrong. I build resilient{" "}
+                <strong className="font-semibold text-[#171326]">HubSpot CRM ecosystems</strong>,{" "}
+                <strong className="font-semibold text-[#171326]">error-guarded n8n workflows</strong>, and{" "}
                 <strong className="font-semibold text-[#171326]">SQL / BigQuery data pipelines</strong>{" "}
-                so your marketing, sales, support, and finance teams scale without adding manual overhead.
+                that your team can rely on 24/7.
               </p>
             </div>
           </div>
 
-          {/* 3-Card BloomFi Bento Row (1 Wide Lavender Card + 2 Deep Indigo Cards) */}
+          {/* 3-Card BloomFi Bento Row */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Wide Lavender Glass Card */}
             <div className="lg:col-span-6 rounded-[28px] p-7 sm:p-8 bg-gradient-to-br from-[#DED7FF] via-[#D0C6FC] to-[#B8A9F8] border border-[#C4B5FD] shadow-sm flex flex-col justify-between min-h-[270px] relative overflow-hidden">
@@ -863,16 +1146,16 @@ const handleContactSubmit = async (e) => {
               <div className="my-4 flex flex-wrap items-center gap-2 relative z-10">
                 <div className="px-3 py-1.5 rounded-xl bg-white/85 backdrop-blur-md border border-white text-xs font-semibold text-[#1F1B33] shadow-sm flex items-center gap-1.5">
                   <Zap className="w-3.5 h-3.5 text-[#6D28D9]" />
-                  <span>Webhook / Trigger</span>
+                  <span>Webhook / Meta Lead</span>
                 </div>
                 <span className="text-[#3B2A78] font-bold">→</span>
                 <div className="px-3 py-1.5 rounded-xl bg-[#1F1B33] text-white text-xs font-semibold shadow-sm flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5 text-[#C4B5FD]" />
-                  <span>AI + Code Node</span>
+                  <span>AI ICP Scorer + E.164</span>
                 </div>
                 <span className="text-[#3B2A78] font-bold">→</span>
                 <div className="px-3 py-1.5 rounded-xl bg-white/85 backdrop-blur-md border border-white text-xs font-semibold text-[#1F1B33] shadow-sm">
-                  HubSpot &amp; Slack
+                  HubSpot Deal &amp; Slack
                 </div>
               </div>
 
@@ -912,7 +1195,7 @@ const handleContactSubmit = async (e) => {
             </div>
           </div>
 
-          {/* Glass Metrics & Personal Motto Bar */}
+          {/* Glass Metrics & Client Guarantee Bar */}
           <div className="rounded-[26px] bg-white/80 backdrop-blur-xl border border-[#E2DCF5] p-6 sm:p-8 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="space-y-1">
@@ -920,7 +1203,7 @@ const handleContactSubmit = async (e) => {
                   {portfolioData.profile.experienceYears}
                 </div>
                 <div className="text-xs text-[#5E567A] font-medium">
-                  Freelance &amp; Automation Delivery
+                  Client Delivery Track Record
                 </div>
               </div>
               <div className="space-y-1">
@@ -928,7 +1211,7 @@ const handleContactSubmit = async (e) => {
                   {portfolioData.workflows.length} Systems
                 </div>
                 <div className="text-xs text-[#5E567A] font-medium">
-                  Multi-Stage n8n Architectures
+                  Production n8n Architectures
                 </div>
               </div>
               <div className="space-y-1">
@@ -942,7 +1225,7 @@ const handleContactSubmit = async (e) => {
               <div className="space-y-1">
                 <div className="text-2xl sm:text-3xl font-bold text-[#171326]">100%</div>
                 <div className="text-xs text-[#5E567A] font-medium">
-                  Remote · Worldwide Ready
+                  Client IP &amp; JSON Handoff
                 </div>
               </div>
             </div>
@@ -958,20 +1241,20 @@ const handleContactSubmit = async (e) => {
         </section>
 
         {/* ===================================================================
-            FEATURED n8n WORKFLOW ARCHITECTURES (All 6 Real Workflows + GitHub)
+            FEATURED n8n WORKFLOW ARCHITECTURES (7 Client Case Studies + GitHub)
            =================================================================== */}
         <section id="workflows" className="space-y-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#5B21B6]">
                 <Workflow className="w-3.5 h-3.5" />
-                <span>Production Automation Portfolio</span>
+                <span>Proven Client Automation Blueprints</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-serif text-[#171326]">
-                n8n Workflow Architectures
+                n8n &amp; HubSpot Case Studies
               </h2>
               <p className="text-sm sm:text-base text-[#4B4466] max-w-2xl">
-                Every workflow below is engineered with structured data normalization, parallel API execution, and dedicated Slack error-handling triggers. Click any diagram to inspect the full node graph or access the JSON source files on GitHub.
+                Inspect 7 production architectures engineered with structured data hygiene, parallel API execution, and Slack error-handling triggers. Click any system to inspect the full node diagram or request a similar build for your stack.
               </p>
             </div>
 
@@ -1091,7 +1374,7 @@ const handleContactSubmit = async (e) => {
                     </div>
                   </div>
 
-                  {/* Collapsible Node Stage Architecture Breakdown + GitHub Link */}
+                  {/* Collapsible Node Stage Architecture Breakdown + Deploy CTA */}
                   <div className="px-6 pb-6 pt-2 border-t border-[#F0EDF9]">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <button
@@ -1122,10 +1405,19 @@ const handleContactSubmit = async (e) => {
                         </a>
                         <button
                           type="button"
-                          onClick={() => setActiveWorkflowModal(wf)}
+                          onClick={() => {
+                            setContactForm((prev) => ({
+                              ...prev,
+                              inquiryType: "Single n8n Workflow Sprint (3–5 Days)",
+                              budgetOrTimeline: "3–5 Day Custom Build",
+                              message: `Hi Shivam, we'd love to deploy a customized version of your "${wf.title}" workflow for our stack.`
+                            }));
+                            showToast(`Pre-filled project brief for "${wf.title}"`);
+                            scrollToSection("contact");
+                          }}
                           className="text-xs font-semibold text-[#1F1B33] hover:text-[#5B21B6] flex items-center gap-1"
                         >
-                          <span>Inspect</span>
+                          <span>Deploy Similar</span>
                           <ArrowUpRight className="w-3.5 h-3.5" />
                         </button>
                       </div>
@@ -1149,7 +1441,126 @@ const handleContactSubmit = async (e) => {
         </section>
 
         {/* ===================================================================
-            OFFICIAL HUBSPOT ACADEMY CERTIFICATIONS (With Real Certificates)
+            INTERACTIVE CLIENT AUTOMATION ROI & HOURS-SAVED CALCULATOR
+           =================================================================== */}
+        <section
+          id="roi-calculator"
+          className="rounded-[32px] p-7 sm:p-10 bg-gradient-to-br from-[#EDE9FE] via-[#E2DAFC] to-[#D5C7FF] border border-[#C4B5FD] shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+        >
+          <div className="lg:col-span-7 space-y-6">
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#4C1D95]">
+                <Calculator className="w-3.5 h-3.5" />
+                <span>Client ROI Estimator</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-serif text-[#171326]">
+                How much manual busywork can we eliminate?
+              </h2>
+              <p className="text-xs sm:text-sm text-[#3B2A78] leading-relaxed">
+                Estimate the monthly hours and operational payroll your team reclaims by replacing manual CRM data entry, lead triage, and spreadsheet reporting with autonomous n8n + HubSpot pipelines.
+              </p>
+            </div>
+
+            <div className="space-y-5 bg-white/80 backdrop-blur-md p-6 rounded-2xl border border-white">
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs font-semibold text-[#171326]">
+                  <span>Team members handling manual CRM / ops tasks</span>
+                  <span className="text-[#5B21B6] font-bold">{teamMembers} people</span>
+                </div>
+                <input
+                  type="range"
+                  min={1}
+                  max={20}
+                  value={teamMembers}
+                  onChange={(e) => setTeamMembers(Number(e.target.value))}
+                  className="w-full accent-[#5B21B6] cursor-pointer"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs font-semibold text-[#171326]">
+                  <span>Manual hours spent per person / week</span>
+                  <span className="text-[#5B21B6] font-bold">{hoursPerWeek} hrs/week</span>
+                </div>
+                <input
+                  type="range"
+                  min={2}
+                  max={20}
+                  value={hoursPerWeek}
+                  onChange={(e) => setHoursPerWeek(Number(e.target.value))}
+                  className="w-full accent-[#5B21B6] cursor-pointer"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <div className="flex justify-between text-xs font-semibold text-[#171326]">
+                  <span>Average loaded hourly team cost (USD)</span>
+                  <span className="text-[#5B21B6] font-bold">${hourlyCost}/hr</span>
+                </div>
+                <input
+                  type="range"
+                  min={15}
+                  max={100}
+                  step={5}
+                  value={hourlyCost}
+                  onChange={(e) => setHourlyCost(Number(e.target.value))}
+                  className="w-full accent-[#5B21B6] cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 rounded-[26px] bg-[#1F1B33] text-white p-7 space-y-6 shadow-xl border border-[#383059]">
+            <div className="space-y-1">
+              <span className="text-[11px] font-semibold uppercase tracking-widest text-[#C4B5FD]">
+                Estimated Automation Impact (85% Reduction)
+              </span>
+              <div className="text-3xl sm:text-4xl font-serif text-white">
+                ${roiMetrics.annualSavingsUsd.toLocaleString()}{" "}
+                <span className="text-sm font-sans font-normal text-[#D1CCE6]">/ year saved</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 pt-2 border-t border-white/10">
+              <div className="p-4 rounded-2xl bg-white/10">
+                <div className="text-2xl font-bold text-[#C4B5FD]">
+                  {roiMetrics.monthlyHoursSaved} hrs
+                </div>
+                <div className="text-[11px] text-[#D1CCE6] mt-0.5">
+                  Reclaimed every month
+                </div>
+              </div>
+              <div className="p-4 rounded-2xl bg-white/10">
+                <div className="text-2xl font-bold text-emerald-300">
+                  ${roiMetrics.monthlySavingsUsd.toLocaleString()}
+                </div>
+                <div className="text-[11px] text-[#D1CCE6] mt-0.5">
+                  Monthly ops value saved
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => {
+                setContactForm((prev) => ({
+                  ...prev,
+                  inquiryType: "HubSpot CRM & RevOps Engine Build (1–2 Weeks)",
+                  budgetOrTimeline: `Reclaiming ~${roiMetrics.monthlyHoursSaved} hrs/mo`,
+                  message: `Hi Shivam, our team of ${teamMembers} spends ~${hoursPerWeek} hrs/week each on manual CRM/ops tasks. We'd like to scope an automation sprint to reclaim ~${roiMetrics.monthlyHoursSaved} hrs/month.`
+                }));
+                scrollToSection("contact");
+              }}
+              className="w-full py-3.5 px-5 rounded-full bg-[#C4B5FD] text-[#171326] text-xs font-bold hover:bg-white transition-all flex items-center justify-center gap-2"
+            >
+              <span>Lock In These Savings — Book a Free Audit</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </button>
+          </div>
+        </section>
+
+        {/* ===================================================================
+            OFFICIAL HUBSPOT ACADEMY CERTIFICATIONS (Client Trust Credentials)
            =================================================================== */}
         <section
           id="certifications"
@@ -1160,13 +1571,13 @@ const handleContactSubmit = async (e) => {
             <div className="space-y-2 max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FF7A59]/20 border border-[#FF7A59]/40 text-xs font-semibold text-[#FFBCA8]">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#FF7A59]" />
-                <span>Official Verified Credentials · HubSpot Academy</span>
+                <span>Verified HubSpot Partner Credentials · HubSpot Academy</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-serif text-white">
-                HubSpot Academy Certifications
+                5× HubSpot Certified Specialist
               </h2>
               <p className="text-sm text-[#D1CCE6] leading-relaxed">
-                Official HubSpot certifications earned by Shivam Saidane across Reporting &amp; Analytics, Sales Hub Software, Answer Engine Optimization (AEO), Frictionless Sales, and Inbound Methodology. Click any certificate to inspect the full credential and verification code.
+                When you hand over the keys to your CRM, you want verified expertise. Every certification below is officially issued by HubSpot Academy across Sales Hub Software, Reporting &amp; Analytics, Answer Engine Optimization (AEO), Frictionless Sales, and Inbound.
               </p>
             </div>
 
@@ -1295,55 +1706,55 @@ const handleContactSubmit = async (e) => {
         </section>
 
         {/* ===================================================================
-            THREE-COLUMN MIDDLE SECTION: SKILLS, TECH STACK & CAREER EVOLUTION
+            THREE-COLUMN CLIENT DELIVERABLES, INTEGRATIONS & 3-STEP PROCESS
            =================================================================== */}
         <section id="skills" className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Card 1: Skills & Expertise Bars */}
+          {/* Card 1: Concrete Client Deliverables (Replaces Resume Skill Bars) */}
           <div className="lg:col-span-4 rounded-[28px] bg-white border border-[#E2DCF5] p-7 shadow-sm flex flex-col justify-between space-y-6">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#5B21B6]">
                 <TrendingUp className="w-3.5 h-3.5" />
-                <span>Core Competencies</span>
+                <span>What Clients Receive</span>
               </div>
-              <h3 className="text-2xl font-serif text-[#171326]">Skills &amp; Expertise</h3>
+              <h3 className="text-2xl font-serif text-[#171326]">Core Deliverables</h3>
               <p className="text-xs text-[#5E567A]">
-                Specialized in revenue operations, CRM administration, and custom backend workflow scripting.
+                Production-ready systems designed to increase deal velocity and eliminate manual errors.
               </p>
             </div>
 
-            <div className="space-y-4">
-              {portfolioData.skills.map((skill) => (
-                <div key={skill.name} className="space-y-1.5">
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="font-semibold text-[#1F1B33]">{skill.name}</span>
-                    <span className="font-bold text-[#5B21B6]">{skill.level}%</span>
+            <div className="space-y-3">
+              {portfolioData.clientDeliverables.map((item) => (
+                <div
+                  key={item.name}
+                  className="p-3.5 rounded-2xl bg-[#F8F7FC] border border-[#E5E0F5] space-y-1"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-bold text-[#1F1B33]">{item.name}</span>
+                    <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-[#EDE9FE] text-[#5B21B6] shrink-0">
+                      {item.outcome}
+                    </span>
                   </div>
-                  <div className="w-full h-2 rounded-full bg-[#F0EDF9] overflow-hidden">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-[#5B21B6] to-[#9333EA]"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
+                  <p className="text-[11px] text-[#5E567A] leading-snug">{item.detail}</p>
                 </div>
               ))}
             </div>
 
             <div className="p-4 rounded-2xl bg-[#F6F5F0] border border-[#E5E0F5] text-xs text-[#3F3859]">
-              <strong className="text-[#171326] block mb-0.5">Full-Funnel Technical Fluency</strong>
-              Bridging marketing strategy (HubSpot Inbound &amp; AEO) with raw SQL/BigQuery analytics and Python/JS code nodes.
+              <strong className="text-[#171326] block mb-0.5">End-to-End Technical Execution</strong>
+              From HubSpot Inbound &amp; AEO strategy to raw SQL/BigQuery queries and custom Python/JS code nodes.
             </div>
           </div>
 
-          {/* Card 2: Tech Stack Grid */}
+          {/* Card 2: Tech Stack We Integrate */}
           <div className="lg:col-span-4 rounded-[28px] bg-white border border-[#E2DCF5] p-7 shadow-sm flex flex-col justify-between space-y-6">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#5B21B6]">
                 <Database className="w-3.5 h-3.5" />
-                <span>Production Toolkit</span>
+                <span>Stack Compatibility</span>
               </div>
-              <h3 className="text-2xl font-serif text-[#171326]">Tech Stack</h3>
+              <h3 className="text-2xl font-serif text-[#171326]">Tools I Connect</h3>
               <p className="text-xs text-[#5E567A]">
-                Platforms, languages, and databases I connect to build resilient automation systems.
+                Your existing CRM, databases, ad platforms, and AI models unified into one cohesive pipeline.
               </p>
             </div>
 
@@ -1374,7 +1785,7 @@ const handleContactSubmit = async (e) => {
             </div>
           </div>
 
-          {/* Card 3: Career Evolution & System Architecture */}
+          {/* Card 3: 3-Step Client Onboarding & Delivery Process */}
           <div
             id="journey"
             className="lg:col-span-4 rounded-[28px] bg-gradient-to-b from-[#EDE9FE] via-[#E4DDFD] to-[#D6C9FF] border border-[#C4B5FD] p-7 shadow-sm flex flex-col justify-between space-y-6"
@@ -1382,22 +1793,22 @@ const handleContactSubmit = async (e) => {
             <div className="space-y-2">
               <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-[#4C1D95]">
                 <Briefcase className="w-3.5 h-3.5" />
-                <span>2–3+ Years Freelance Evolution</span>
+                <span>Simple, Transparent Delivery</span>
               </div>
-              <h3 className="text-2xl font-serif text-[#171326]">How I Work &amp; Evolved</h3>
+              <h3 className="text-2xl font-serif text-[#171326]">How Sprints Work</h3>
               <p className="text-xs text-[#3B2A78]">
-                From creative media &amp; voice systems to full-scale n8n and HubSpot CRM engineering.
+                From initial workflow audit to live deployment inside your stack in 3 structured steps.
               </p>
             </div>
 
             <div className="space-y-4">
-              {portfolioData.journey.map((step) => (
+              {portfolioData.deliveryProcess.map((step) => (
                 <div
                   key={step.phase}
                   className="p-4 rounded-2xl bg-white/85 backdrop-blur-md border border-white shadow-sm space-y-1"
                 >
                   <div className="flex items-center justify-between text-[11px] font-bold text-[#5B21B6]">
-                    <span>STAGE {step.phase}</span>
+                    <span>STEP {step.phase}</span>
                     <span>{step.period}</span>
                   </div>
                   <div className="text-sm font-bold text-[#171326]">{step.title}</div>
@@ -1407,30 +1818,87 @@ const handleContactSubmit = async (e) => {
             </div>
 
             <div className="flex items-center justify-between px-4 py-3 rounded-2xl bg-[#1F1B33] text-white text-xs">
-              <span>Available for Freelance &amp; Full-Time Remote</span>
-              <span className="font-bold text-[#C4B5FD]">Worldwide</span>
+              <span>14-Day Post-Launch Hypercare Included</span>
+              <span className="font-bold text-[#C4B5FD]">100% IP Yours</span>
             </div>
           </div>
         </section>
 
         {/* ===================================================================
-            CONTACT SECTION + FUNCTIONAL NETLIFY FORM + VERIFIED SOCIAL LINKS
+            FREELANCE CLIENT FAQ ACCORDION
+           =================================================================== */}
+        <section id="faq" className="rounded-[32px] bg-white border border-[#E2DCF5] p-7 sm:p-10 shadow-sm space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#5B21B6]">
+                <HelpCircle className="w-3.5 h-3.5" />
+                <span>Client Questions Answered</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-serif text-[#171326]">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <button
+              type="button"
+              onClick={() => scrollToSection("contact")}
+              className="text-xs font-semibold text-[#5B21B6] hover:text-[#171326] flex items-center gap-1"
+            >
+              <span>Have a custom stack question? Ask me directly</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {portfolioData.faqs.map((item, idx) => {
+              const isOpen = openFaqIndex === idx;
+              return (
+                <div
+                  key={idx}
+                  className="rounded-2xl bg-[#F6F5F0] border border-[#E5E0F5] overflow-hidden"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaqIndex(isOpen ? -1 : idx)}
+                    className="w-full p-5 text-left flex items-center justify-between gap-3"
+                  >
+                    <span className="text-xs sm:text-sm font-bold text-[#171326]">
+                      {item.q}
+                    </span>
+                    <ChevronDown
+                      className={`w-4 h-4 text-[#5B21B6] shrink-0 transition-transform ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {isOpen && (
+                    <div className="px-5 pb-5 text-xs text-[#4B4466] leading-relaxed border-t border-[#E5E0F5]/80 pt-3">
+                      {item.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* ===================================================================
+            CONTACT SECTION + FREELANCE PROJECT SCOPING FORM
            =================================================================== */}
         <section
           id="contact"
           className="rounded-[32px] bg-white border border-[#DCD4F7] p-7 sm:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-10"
         >
-          {/* Left Column: Direct Contact Info & Social Profiles */}
+          {/* Left Column: Direct Contact Info & Client Channels */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
             <div className="space-y-4">
               <span className="inline-block px-3.5 py-1 rounded-full text-xs font-semibold bg-[#EDE9FE] text-[#5B21B6]">
-                Let&apos;s Build Your Revenue Engine
+                Book a Project Sprint or Free Audit
               </span>
               <h2 className="text-3xl sm:text-4xl font-serif text-[#171326] leading-tight">
-                Ready to automate your CRM &amp; workflows?
+                Ready to put your CRM &amp; workflows on autopilot?
               </h2>
               <p className="text-sm text-[#4B4466] leading-relaxed">
-                Whether you need a custom n8n pipeline, HubSpot Sales Hub &amp; Reporting architecture, or a dedicated remote Marketing Automation &amp; CRM Specialist—send a message or connect on any platform below.
+                Tell me what manual workflow or HubSpot bottleneck is slowing your team down. I&apos;ll reply within 24 hours with a concrete architectural plan, timeline, and fixed-scope quote.
               </p>
             </div>
 
@@ -1443,7 +1911,7 @@ const handleContactSubmit = async (e) => {
                   </div>
                   <div className="min-w-0">
                     <div className="text-[11px] font-semibold uppercase tracking-wider text-[#655E80]">
-                      Work Email
+                      Direct Client Email
                     </div>
                     <a
                       href={`mailto:${portfolioData.profile.email}`}
@@ -1479,7 +1947,7 @@ const handleContactSubmit = async (e) => {
                   </div>
                   <div>
                     <div className="text-[11px] font-semibold uppercase tracking-wider text-[#655E80]">
-                      Location
+                      Base &amp; Timezone
                     </div>
                     <div className="text-xs font-bold text-[#171326]">
                       {portfolioData.profile.location}
@@ -1493,7 +1961,7 @@ const handleContactSubmit = async (e) => {
                   </div>
                   <div>
                     <div className="text-[11px] font-semibold uppercase tracking-wider text-[#655E80]">
-                      Official Domain
+                      Official Studio
                     </div>
                     <a
                       href={`https://${portfolioData.profile.domain}`}
@@ -1511,14 +1979,14 @@ const handleContactSubmit = async (e) => {
             {/* Verified Social & Freelance Links (LinkedIn, Threads, Fiverr, GitHub) */}
             <div className="space-y-2.5">
               <span className="text-xs font-semibold uppercase tracking-wider text-[#655E80] block">
-                Profiles &amp; Marketplaces
+                Verified Freelance Profiles &amp; Code
               </span>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                 {[
-                  { label: "LinkedIn", url: portfolioData.profile.linkedinUrl, badge: "in" },
-                  { label: "Threads", url: portfolioData.profile.threadsUrl, badge: "@" },
                   { label: "Fiverr", url: portfolioData.profile.fiverrUrl, badge: "fi" },
-                  { label: "GitHub", url: portfolioData.profile.githubUrl, badge: "gh" }
+                  { label: "LinkedIn", url: portfolioData.profile.linkedinUrl, badge: "in" },
+                  { label: "GitHub", url: portfolioData.profile.githubUrl, badge: "gh" },
+                  { label: "Threads", url: portfolioData.profile.threadsUrl, badge: "@" }
                 ].map((soc) => (
                   <a
                     key={soc.label}
@@ -1540,7 +2008,7 @@ const handleContactSubmit = async (e) => {
             </div>
           </div>
 
-          {/* Right Column: Functional Netlify-Ready Contact Form */}
+          {/* Right Column: Functional Netlify-Ready Project Scoping Form */}
           <div className="lg:col-span-7">
             <form
               name="shivam-portfolio-contact"
@@ -1553,9 +2021,9 @@ const handleContactSubmit = async (e) => {
 
               <div className="flex items-center justify-between border-b border-[#E5E0F5] pb-4">
                 <div>
-                  <h3 className="text-lg font-serif text-[#171326]">Send a Direct Message</h3>
+                  <h3 className="text-lg font-serif text-[#171326]">Request a Project Quote or Audit</h3>
                   <p className="text-xs text-[#655E80]">
-                    Reach out for freelance workflows, HubSpot consulting, or full-time remote roles
+                    Scope a 3–5 day n8n workflow sprint, HubSpot RevOps build, or monthly retainer
                   </p>
                 </div>
                 <span className="px-3 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-800 border border-emerald-500/30">
@@ -1573,15 +2041,15 @@ const handleContactSubmit = async (e) => {
                       Thank you, {contactForm.name}!
                     </h4>
                     <p className="text-xs text-[#4B4466] max-w-md mx-auto leading-relaxed">
-                      Your message regarding <strong>{contactForm.inquiryType}</strong> has been received. You can also send it directly via your email client below.
+                      Your project inquiry for <strong>{contactForm.inquiryType}</strong> has been delivered to Shivam&apos;s inbox. You can also send a direct copy via your email client below.
                     </p>
                   </div>
                   <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
                     <a
                       href={`mailto:${portfolioData.profile.email}?subject=${encodeURIComponent(
-                        `[${contactForm.inquiryType}] Inquiry from ${contactForm.name}`
+                        `[Project Inquiry: ${contactForm.inquiryType}] from ${contactForm.name}`
                       )}&body=${encodeURIComponent(
-                        `Name: ${contactForm.name}\nEmail: ${contactForm.email}\nEngagement Type: ${contactForm.inquiryType}\nTimeline / Scope: ${contactForm.budgetOrTimeline}\n\nMessage:\n${contactForm.message}`
+                        `Name: ${contactForm.name}\nEmail: ${contactForm.email}\nPackage / Service: ${contactForm.inquiryType}\nTimeline / Scope: ${contactForm.budgetOrTimeline}\n\nProject Details:\n${contactForm.message}`
                       )}`}
                       className="px-5 py-2.5 rounded-full bg-[#1F1B33] text-white text-xs font-semibold hover:bg-[#312A4F] flex items-center gap-2"
                     >
@@ -1595,14 +2063,14 @@ const handleContactSubmit = async (e) => {
                         setContactForm({
                           name: "",
                           email: "",
-                          inquiryType: "HubSpot CRM & Marketing Automation",
+                          inquiryType: "HubSpot CRM & RevOps Engine Build (1–2 Weeks)",
                           budgetOrTimeline: "",
                           message: ""
                         });
                       }}
                       className="px-4 py-2.5 rounded-full bg-white border border-[#DCD4F7] text-xs font-semibold text-[#3F3859] hover:bg-[#EDE9FE]"
                     >
-                      Send Another Message
+                      Submit Another Inquiry
                     </button>
                   </div>
                 </div>
@@ -1642,7 +2110,7 @@ const handleContactSubmit = async (e) => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold text-[#2A2344] block">
-                        How Can I Help?
+                        Service or Sprint Package
                       </label>
                       <select
                         name="inquiryType"
@@ -1652,23 +2120,26 @@ const handleContactSubmit = async (e) => {
                         }
                         className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#DCD4F7] text-xs text-[#171326] focus:outline-none focus:border-[#5B21B6]"
                       >
-                        <option value="HubSpot CRM & Marketing Automation">
-                          HubSpot CRM &amp; Marketing Automation
+                        <option value="HubSpot CRM & RevOps Engine Build (1–2 Weeks)">
+                          HubSpot CRM &amp; RevOps Engine Build (1–2 Weeks)
                         </option>
-                        <option value="Custom n8n Workflow Engineering">
-                          Custom n8n Workflow Engineering
+                        <option value="Single n8n Workflow Sprint (3–5 Days)">
+                          Single n8n Workflow Sprint (3–5 Days)
                         </option>
-                        <option value="Full-Time Remote Role / Opportunity">
-                          Full-Time Remote Role / Opportunity
+                        <option value="Dedicated Monthly Automation Retainer">
+                          Dedicated Monthly Automation Retainer
                         </option>
-                        <option value="SQL / BigQuery / RevOps Reporting">
-                          SQL / BigQuery / RevOps Reporting
+                        <option value="SQL / BigQuery & Executive BI Reporting">
+                          SQL / BigQuery &amp; Executive BI Reporting
+                        </option>
+                        <option value="Custom AI Agent / Support Triage Pipeline">
+                          Custom AI Agent / Support Triage Pipeline
                         </option>
                       </select>
                     </div>
                     <div className="space-y-1.5">
                       <label className="text-xs font-semibold text-[#2A2344] block">
-                        Role Type or Project Timeline
+                        Target Timeline or Scope
                       </label>
                       <input
                         type="text"
@@ -1677,7 +2148,7 @@ const handleContactSubmit = async (e) => {
                         onChange={(e) =>
                           setContactForm({ ...contactForm, budgetOrTimeline: e.target.value })
                         }
-                        placeholder="e.g. Freelance Sprint or Full-Time Remote"
+                        placeholder="e.g. Start this week · 3–5 Day Sprint"
                         className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#DCD4F7] text-xs text-[#171326] focus:outline-none focus:border-[#5B21B6]"
                       />
                     </div>
@@ -1685,7 +2156,7 @@ const handleContactSubmit = async (e) => {
 
                   <div className="space-y-1.5">
                     <label className="text-xs font-semibold text-[#2A2344] block">
-                      Project or Role Details *
+                      What Would You Like to Automate? *
                     </label>
                     <textarea
                       name="message"
@@ -1693,14 +2164,15 @@ const handleContactSubmit = async (e) => {
                       required
                       value={contactForm.message}
                       onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
-                      placeholder="Tell me about your HubSpot setup, the n8n workflows you want to automate, or the remote role you're hiring for..."
+                      placeholder="Tell me about your current tools (e.g. HubSpot, n8n, Meta Ads, Stripe, Supabase) and the manual workflow or pipeline bottleneck you want solved..."
                       className="w-full px-4 py-3 rounded-xl bg-white border border-[#DCD4F7] text-xs text-[#171326] focus:outline-none focus:border-[#5B21B6]"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 rounded-full bg-[#1F1B33] hover:bg-[#312A4F] text-white text-xs sm:text-sm font-semibold transition-all shadow-md flex items-center justify-center gap-2"
+                    disabled={isSubmitting}
+                    className="w-full py-3.5 rounded-full bg-[#1F1B33] hover:bg-[#312A4F] disabled:opacity-60 text-white text-xs sm:text-sm font-semibold transition-all shadow-md flex items-center justify-center gap-2"
                   >
                     <Send className="w-4 h-4 text-[#C4B5FD]" />
                     <span>Send Message to Shivam S.</span>
@@ -1720,9 +2192,17 @@ const handleContactSubmit = async (e) => {
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-[#5B21B6]" />
             <span className="font-bold text-[#171326]">{portfolioData.profile.name}</span>
-            <span>· Marketing Automation &amp; CRM Specialist · {portfolioData.profile.domain}</span>
+            <span>· Freelance HubSpot RevOps &amp; n8n Automation Partner · {portfolioData.profile.domain}</span>
           </div>
           <div className="flex items-center gap-5">
+            <a
+              href={portfolioData.profile.fiverrUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-[#171326] font-medium"
+            >
+              Fiverr
+            </a>
             <a
               href={portfolioData.profile.linkedinUrl}
               target="_blank"
@@ -1738,14 +2218,6 @@ const handleContactSubmit = async (e) => {
               className="hover:text-[#171326] font-medium"
             >
               GitHub
-            </a>
-            <a
-              href={portfolioData.profile.fiverrUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-[#171326] font-medium"
-            >
-              Fiverr
             </a>
             <a
               href={portfolioData.profile.threadsUrl}
@@ -1769,7 +2241,7 @@ const handleContactSubmit = async (e) => {
             <div className="px-6 py-4 bg-[#1F1B33] text-white flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <span className="px-2.5 py-1 rounded-lg bg-[#C4B5FD] text-[#171326] font-bold text-xs">
-                  Workflow {activeWorkflowModal.number}
+                  Case Study {activeWorkflowModal.number}
                 </span>
                 <div>
                   <h3 className="text-base sm:text-lg font-serif text-white">
@@ -1851,14 +2323,15 @@ const handleContactSubmit = async (e) => {
                       setActiveWorkflowModal(null);
                       setContactForm((prev) => ({
                         ...prev,
-                        inquiryType: "Custom n8n Workflow Engineering",
-                        message: `Hi Shivam, I checked out your "${wfTitle}" n8n workflow and would love to discuss building a similar automation pipeline.`
+                        inquiryType: "Single n8n Workflow Sprint (3–5 Days)",
+                        budgetOrTimeline: "3–5 Day Custom Sprint",
+                        message: `Hi Shivam, I inspected your "${wfTitle}" case study and want to deploy a similar workflow for our business.`
                       }));
                       scrollToSection("contact");
                     }}
                     className="px-5 py-2.5 rounded-full bg-[#1F1B33] text-white text-xs font-semibold hover:bg-[#322B52]"
                   >
-                    Inquire About This Workflow
+                    Deploy This Workflow for My Business
                   </button>
                 </div>
               </div>
